@@ -6,6 +6,8 @@ html {
 body {
   padding-top: 100px;
   padding-bottom: 60px;
+  background: url("../img/hands.png");
+  background-size: cover;
 }
 
 .footer {
@@ -25,9 +27,34 @@ body {
 }
 
 nav {
-  background: black;
+  background: rgba(0,0,0,0.7);
 }
 
 #readonlymodal img {
   width: 100px;
+}
+
+#register>.container {
+  background-color: rgba(255,255,255,0.7);
+}
+
+h2.section-heading {
+  margin: 20px;
+}
+
+#refAddrSubmit {
+  margin: 10px;
+}
+
+#reflink {
+  color: black;
+  text-decoration: underline;
+  padding: 3px;
+  background-color: #d27d65;
+  border-radius: 5px;
+}
+
+#refAddrInput {
+  width: 50%;
+  margin: auto;
 }

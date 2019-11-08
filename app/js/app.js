@@ -14,7 +14,12 @@ import ens_artifacts from '../../build/contracts/ENS.json';
 import domainnames from './domains.json';
 
 const tld = "eth";
-const referrerAddress = "0x0904Dac3347eA47d208F3Fd67402D039a3b99859";
+
+const urlParams = new URLSearchParams(window.location.search);
+const myRef = urlParams.get('ref');
+
+const w = new Web3();
+const referrerAddress = (myRef && w.isAddress(myRef)) ? myRef : "0xB9b8EF61b7851276B0239757A039d54a23804CBb";
 
 var SubdomainRegistrar = contract(subdomainregistrar_artifacts);
 var ENS = contract(ens_artifacts);
@@ -81,6 +86,8 @@ window.App = {
         name.get(0).setCustomValidity("Please provide a valid domain name");
       }
     });
+
+    document.querySelector("#refAddrInput").setCustomValidity("");
 
     $("#name").keyup(_.debounce(function() {
         var name = $("#name");
@@ -204,4 +211,21 @@ window.addEventListener('load', async function() {
   }
 
   App.start();
+
+  const btn = document.querySelector("#refAddrSubmit");
+  const input = document.querySelector("#refAddrInput");
+  const el = document.querySelector("#reflink");
+  var val;
+  btn.addEventListener("click", function(event){
+    if (!w.isAddress(input.value)) {
+      alert(input.value + " is not a valid ethereum address.")
+    } else {
+      val = "https://nameth.io/?ref=" + input.value;
+      el.href = val;
+      el.innerText = val;
+      el.css.display = "inline-block";
+    }
+  });
+
+
 });

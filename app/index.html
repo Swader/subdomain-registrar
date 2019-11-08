@@ -5,18 +5,32 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Buy an ENS Ethereum subdomain">
+    <meta name="author" content="Bruno Škvorc">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
-    <title>ENSnow</title>
+    <!--  Essential META Tags -->
+
+    <meta property="og:title" content="Nameth: Ethereum .dev.eth subdomains">
+    <meta property="og:description" content="Register Ethereum ENS subdomains easily">
+    <meta property="og:image" content="https://nameth.io/img/hands.png">
+    <meta property="og:url" content="https://nameth.io">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+<!--  Non-Essential, But Recommended -->
+
+    <meta property="og:site_name" content="Nameth">
+    <meta name="twitter:image:alt" content="Outline of hands holding pinkie fingers on a colorful background">
+
+    <title>Dev.Eth Sudomains</title>
   </head>
 
   <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <img id="enslogo" src="img/ens.svg" />
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">ENSnow</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">🔹Đ🔹</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -34,12 +48,17 @@
     <section id="register">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-10 text-center was-validated">
-            <h2 class="section-heading">Search for subdomains</h2>
-            <input type="search" id="name" class="form-control form-control-lg" />
+          <div class="col-lg-10 text-center">
+            <h2 class="section-heading">Search for {?}.dev.eth subdomains</h2>
+            <input type="search" autocomplete="off" id="name" class="form-control form-control-lg" />
+
           </div>
+
         </div>
+
+
       </div>
+
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center">
@@ -48,16 +67,26 @@
           </div>
         </div>
       </div>
+
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-10 text-center">
+      <hr>
+                  <h4>Referral program</h2>
+                              <p>The referral commission is 10%, meaning you get 0.005 eth for every registration made through your link. Just enter your Ethereum address in the field below and you'll get your referral link.</p>
+                              <input type="input" id="refAddrInput" class="form-control form-control-sm" /><input id="refAddrSubmit" class="btn btn-secondary small" type="submit" value="Get link">
+                              <a href="" id="reflink" style="display: none;"></a>
+                  
+              </div>
+          </div>
+      </div>
     </section>
 
     <footer class="footer">
       <div class="container">
         <div class="row text-muted">
           <div class="col-lg-10">
-            Copyright 2017 <a href="mailto:arachnid@notdot.net">Nick Johnson</a>
-          </div>
-          <div class="col-lg-2 text-right">
-            <a href="https://github.com/arachnid/subdomain-registrar/">Source on GitHub</a>
+            Copyright 2017 <a href="mailto:arachnid@notdot.net">Nick Johnson</a>, forked and modified by <a href="https://twitter.com/bitfalls">Bitfalls</a>, 2019
           </div>
         </div>
       </div>
@@ -110,15 +139,15 @@
                   <a href="https://metamask.io/"><img src="img/metamask-logo.png"/></a>
                 </div>
                 <div class="col-md-6 text-center">
-                  <a href="https://github.com/ethereum/mist/releases"><img src="img/mist-logo.png"/></a>
+                  <a href="https://trustwallet.com"><img src="img/trust.png"/></a>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 text-center">
-                  <p><a href="https://metamask.io/">Metamask plugin</a></p>
+                  <p><a href="https://metamask.io/">Metamask plugin or app</a></p>
                 </div>
                 <div class="col-md-6 text-center">
-                  <p><a href="https://github.com/ethereum/mist/releases">Mist browser</a></p>
+                  <p><a href="https://trustwallet.com">Trust Wallet</a></p>
                 </div>
               </div>
             </div>
@@ -151,37 +180,33 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">About ENSNow</h5>
+            <h5 class="modal-title">About Dev.Eth Subdomains</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <h2>What is this?</h2>
-            <p>ENSNow is a webapp and smart contract that lets you name your Ethereum
+            <p>A simple webapp and smart contract based on ENSNow that lets you name your Ethereum
               wallet in 30 seconds, one click, and one transaction.</p>
 
             <h2>How does it work?</h2>
             <p>Enter a phrase to search for, and the app will show you all available
-              extensions for that phrase. Click the one you like best, and your
-              web3-enabled browser will pop up a transaction confirmation window.
+              subdomains. Click the one you like best, and your
+              web3-enabled browser (<a href="https://metamask.io" target="_blank">Metamask</a>,  <a href="https://trustwallet.com" target="_blank">Trust Wallet</a>, or <a target="_blank" href="https://wallets.review">any other</a>) will pop up a transaction confirmation window.
               Approve the transaction, and as soon as it's mined, the wallet you
               sent the transaction from has a working ENS name! You can now give
               anyone your new name in place of your wallet address.</p>
 
-            <h2>How can I trust the owners of these domains?</h2>
-            <p>In order to be listed on ENSNow, domain owners have to commit
-              ownership of their name to a smart contract. This contract prohibits
-              them from making any changes to the name until the permanent registrar
-              upgrade, planned for approximately May 2019.</p>
-            <p>This means that your names are secure until at least that date. At
-              that time, you should check back in to determine if the owner of your
-              domain has precommitted to a migration path to the permanent registrar
-              that will allow you to retain your name safely.</p>
+              <p>Example: if you picked "joe" as the subdomain, then you could give anyone "joe.dev.eth" as your name and they can send ether or tokens directly to it, without remembering your long address.</p>
 
-            <h2>How can I list my own domain?</h2>
-            <p>A detailed migration guide is underway, and a streamlined registration
-              process will follow.</p>
+            <h2>How can I trust the owner of the parent domain?</h2>
+            <p>In order to be listed like this, domain owners have to commit
+              ownership of their name to a smart contract. This contract prohibits
+              them from making any changes to the name, ever.</p>
+            <p>This means that your names are secure indefinitely, as long as the domain's hosting costs are being paid. As soon as enough domains have been purchased, 
+              the hosting costs of this parent domain will be paid well in advance. In essence, the domain's life and the life of its subdomains depends on how many people register subdomains, 
+              so make sure you recommend it to others! There's also a commission fee to be earned - just use the referral link functionality!</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
